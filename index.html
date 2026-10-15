@@ -20,7 +20,7 @@
 <script>
 // Replace with your WhatsApp number: India country code 91 + your 10-digit number, digits only.
 const WHATSAPP_NUMBER = "+919655898015";
-const MESSAGE = "Hi! I saw your NOIRFRAME portfolio. I’m interested in a cinematic Reel edit.";
+const MESSAGE = "Hi! Lokesh I Saw your portfolio,In your Website. I’m interested in a cinematic Reel edit.";
 document.getElementById("year").textContent = new Date().getFullYear();
 document.querySelectorAll(".wa-link").forEach(link=>link.addEventListener("click",event=>{event.preventDefault();if(WHATSAPP_NUMBER.includes("X")){alert("Setup needed: edit index.html and replace 91XXXXXXXXXX with your WhatsApp number including country code.");return;}window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(MESSAGE),"_blank","noopener,noreferrer");}));
 document.querySelectorAll(".video-link").forEach(link=>link.addEventListener("click",event=>{if(link.getAttribute("href")==="#"){event.preventDefault();alert("Setup needed: replace href=\"#\" on this card with your public Reel/video URL.");}}));
